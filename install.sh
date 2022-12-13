@@ -18,7 +18,7 @@ dotfiles_echo() {
 set -e # Terminate script if anything exits with a non-zero value
 set -u # Prevent unset variables
 
-files="gemrc gitconfig gitignore_global gitmessage hushlogin npmrc pryrc tmux.conf vimrc zshrc"
+files="gemrc gitconfig gitignore_global gitmessage hushlogin npmrc pryrc vimrc zshrc"
 DOTFILES_DIR=$HOME/dotfiles
 
 dotfiles_echo "Installing dotfiles..."

@@ -178,7 +178,6 @@ Plugin 'scrooloose/syntastic'             " Syntax checking hacks for vim       
 Plugin 'scrooloose/nerdtree'              " A tree explorer plugin for vim                        | https://github.com/scrooloose/nerdtree
 Plugin 'skwp/greplace.vim'                " Global search and replace for vi                      | https://github.com/skwp/greplace.vim
 Plugin 'rking/ag.vim'                     " Vim plugin for the_silver_searcher                    | https://github.com/rking/ag.vim
-Plugin 'christoomey/vim-tmux-navigator'   " Seamless navigation between tmux panes and vim splits | https://github.com/christoomey/vim-tmux-navigator
 Plugin 'ctrlpvim/ctrlp.vim'               " Active fork of kien/ctrlp.vim—Fuzzy file finder       | https://github.com/ctrlpvim/ctrlp.vim
 Plugin 'joshukraine/dragvisuals'          " Damian Conway's dragvisuals plugin for vim            | https://github.com/joshukraine/dragvisuals
 
@@ -197,9 +196,8 @@ Plugin 'tpope/vim-bundler'                " Vim goodies for Bundler, rails.vim, 
 Plugin 'tpope/vim-fugitive'               " Tim Pope's Git wrapper                                | https://github.com/tpope/vim-fugitive
 Plugin 'tpope/vim-haml'                   " Vim runtime files for Haml, Sass, and SCSS            | https://github.com/tpope/vim-haml
 
-" Related to testing & tmux
+" Related to testing
 Plugin 'thoughtbot/vim-rspec'             " Run Rspec specs from Vim                              | https://github.com/thoughtbot/vim-rspec
-Plugin 'christoomey/vim-tmux-runner'      " Command runner for sending commands from vim to tmux. | https://github.com/christoomey/vim-tmux-runner
 
 " Related to vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'     " [vim-snipmate dependency]                             | https://github.com/MarcWeber/vim-addon-mw-utils
@@ -250,11 +248,6 @@ map <leader>d :g/^\s*#.*/d<CR>:nohl<CR>
 " Run 'git blame' on a selection of code
 vmap <leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
-" zoom a vim pane like in tmux
-nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
-" zoom back out
-nnoremap <leader>= :wincmd =<cr>
-
 " Force vim to use 'very magic' mode for regex searches
 nnoremap / /\v
 
@@ -288,15 +281,6 @@ map <leader>n :call RunNearestSpec()<CR>
 map <leader>l :call RunLastSpec()<CR>
 map <leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = 'VtrSendCommandToRunner! clear; bin/rspec {spec}'
-
-" vim-tmux-runner
-let g:VtrPercentage = 20
-let g:VtrUseVtrMaps = 1
-nnoremap <leader>sd :VtrSendCtrlD<cr>
-nmap <leader>fs :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
-nmap <leader>osp :VtrOpenRunner {'orientation': 'h', 'percentage': 20, 'cmd': '' }<cr>
-nmap <leader>orc :VtrOpenRunner {'orientation': 'h', 'percentage': 40, 'cmd': 'rc'}<cr>
-nmap <leader>opr :VtrOpenRunner {'orientation': 'h', 'percentage': 40, 'cmd': 'pry'}<cr>
 
 " CtrlP
 map <leader>t <C-p>
@@ -347,7 +331,7 @@ let g:DVB_TrimWS = 1
 
 " specify syntax highlighting for specific files
 autocmd Bufread,BufNewFile *.spv set filetype=php
-autocmd Bufread,BufNewFile aliases,functions,prompt,tmux,oh-my-zsh set filetype=zsh
+autocmd Bufread,BufNewFile aliases,functions,prompt,oh-my-zsh set filetype=zsh
 autocmd Bufread,BufNewFile *.md set filetype=markdown " Vim interprets .md as 'modula2' otherwise, see :set filetype?
 
 " When loading text files, wrap them and don't split up words.
