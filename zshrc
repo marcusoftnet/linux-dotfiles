@@ -16,7 +16,6 @@ HISTFILE=~/.zsh_history
 
 source $HOME/dotfiles/zsh/oh-my-zsh
 source $HOME/dotfiles/zsh/aliases
-source $HOME/dotfiles/zsh/prompt
 source $HOME/dotfiles/zsh/functions
 
 # Travis CI
