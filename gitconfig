@@ -52,3 +52,6 @@
   rebase = preserve
 [push]
   default = upstream
+[user]
+	email = marcus@scling.com
+	name = Marcus Hammarberg

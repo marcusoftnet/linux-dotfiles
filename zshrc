@@ -27,3 +27,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Include local settings
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+source /home/marcus/.orion/orion.zshrc
