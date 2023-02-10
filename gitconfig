@@ -13,9 +13,9 @@
   df = diff --word-diff --color-words
   dfs = diff --staged
   lg = log --stat --color
-  mup = !git checkout main && git pull && git checkout -
+  mup = !git checkout master && git pull && git checkout -
   pl = pull
-  pum = push -u origin main
+  pum = push -u origin master
   ps = push
   sl = log --graph --pretty=format:'%C(yellow)%h%Creset - %C(white)%d%Creset %s %Cblue(%an, %ar)%Creset'
   sla = log --oneline --decorate --all --graph
