@@ -33,7 +33,7 @@
 [core]
   autocrlf = input
   safecrlf = true
-  editor = vim
+  editor = code --wait
   excludesfile = ~/.gitignore_global
 [fetch]
   prune = true
@@ -45,9 +45,6 @@
   modified = red
 [include]
   path = ~/.gitconfig.local
-[merge]
-  conflictstyle = diff3
-  ff = only
 [pull]
   rebase = merges
 [push]
