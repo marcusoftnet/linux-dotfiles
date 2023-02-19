@@ -155,4 +155,4 @@ alias gaca='git add -A && git commit --amend --no-edit'
 alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && echo {} && git status -s && echo)' \;"
 
 # Scling stuff
-alias goodmorning="bazel build //...:all && scli dev idealize && idea ."
+alias goodmorning="git checkout master && git pull && bazel build //...:all && scli dev idealize && idea ."
