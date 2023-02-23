@@ -110,6 +110,8 @@ alias gtl='git tag --list | sort -r'
 
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
+alias gbs="git checkout -"
+
 # Upgrade Oh My Zshell
 alias upz='upgrade_oh_my_zsh'
 
@@ -155,4 +157,9 @@ alias gaca='git add -A && git commit --amend --no-edit'
 alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && echo {} && git status -s && echo)' \;"
 
 # Scling stuff
-alias goodmorning="git checkout master && git pull && bazel build //...:all && scli dev idealize && idea ."
+alias goodmorning="cd ~/scling/scling && \
+orion/bin/bootstrap-env.sh && \
+git checkout master && git pull && \
+bazel build //...:all && \
+scli dev idealize && \
+idea ."
