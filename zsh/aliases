@@ -163,3 +163,4 @@ git checkout master && git pull && \
 bazel build //...:all && \
 scli dev idealize && \
 idea ."
+alias e="code ."
