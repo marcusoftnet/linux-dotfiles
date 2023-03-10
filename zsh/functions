@@ -42,3 +42,5 @@ function rmnm () {
 }
 
 function web() { npx live-server . --quiet; }
+
+function count() { find $1 -type f | wc -l  }
