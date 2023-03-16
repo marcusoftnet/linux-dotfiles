@@ -7,7 +7,7 @@ fi
 
 # ~/.zshrc
 
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 export EDITOR="code"
 export BUNDLER_EDITOR="code"
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
@@ -39,3 +39,5 @@ source /home/marcus/.orion/orion.zshrc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias idea="intellij-idea-community"
