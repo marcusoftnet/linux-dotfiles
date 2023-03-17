@@ -157,11 +157,6 @@ alias gaca='git add -A && git commit --amend --no-edit'
 alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && echo {} && git status -s && echo)' \;"
 
 # Scling stuff
-alias goodmorning="cd ~/scling/scling && \
-orion/bin/bootstrap-env.sh && \
-git checkout master && git pull && \
-bazel build //...:all && \
-scli dev idealize && \
-idea ."
+alias goodmorning="sh ~/scling/scling/orion/bin/good-morning.sh"
 alias e="code ."
 alias go-scling="cd ~/scling/scling"
