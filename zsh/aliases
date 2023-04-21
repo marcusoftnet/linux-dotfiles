@@ -160,4 +160,5 @@ alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && ech
 alias goodmorning="~/scling/scling/orion/bin/good-morning.sh"
 alias e="code ."
 alias go-scling="cd ~/scling/scling"
+alias go-scorpius="cd ~/scling/scling/constellation/scorpius"
 alias idea="intellij-idea-community . >& /tmp/intellij.out &"
