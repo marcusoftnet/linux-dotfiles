@@ -76,7 +76,7 @@ alias gbr='git branch --remote'
 alias gca='git commit --amend'
 alias gci='git commit -v'
 alias gco='git checkout'
-alias gcm='git checkout main'
+alias gcm='git checkout master'
 alias gcl='git clone'
 
 alias gdc='git diff --word-diff --cached --color-words'
@@ -96,11 +96,11 @@ alias glgp='git log --stat --color --patch'
 alias glol='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias gloa='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --all'
 
-alias gmup='!git checkout main && git pull && git checkout -'
+alias gmup='git checkout master && git pull && git checkout -'
 
 alias gpl='git pull'
 alias gps='git push'
-alias gpum='git push -u origin main'
+alias gpum='git push -u origin master'
 
 alias grv='git remote -v'
 
@@ -160,4 +160,4 @@ alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && ech
 alias goodmorning="~/scling/scling/orion/bin/good-morning.sh"
 alias e="code ."
 alias go-scling="cd ~/scling/scling"
-alias idea="intellij-idea-community"
+alias idea="intellij-idea-community . >& /tmp/intellij.out &"
