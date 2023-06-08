@@ -159,7 +159,7 @@ alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && ech
 alias grmb="git branch | grep -v "master" | xargs git branch -D"
 
 # Scling stuff
-alias goodmorning="scli dev good-morning"
+alias goodmorning="~/scling/orion/bin/good-morning.sh"
 alias e="code ."
 alias go-scling="cd ~/scling"
 alias go-scorpius="cd ~/scling/constellation/scorpius"
