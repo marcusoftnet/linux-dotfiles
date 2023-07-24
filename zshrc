@@ -41,6 +41,9 @@ source /home/marcus/.orion/orion.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+# start serenade as a separate process
+/home/marcus/bin/Serenade-2.0.2.AppImage &
+
 source /home/marcus/.orion/orion.zshrc
 
 # >>> conda initialize >>>
