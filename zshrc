@@ -40,10 +40,6 @@ source /home/marcus/.orion/orion.zshrc
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-# start serenade as a separate process
-/home/marcus/bin/Serenade-2.0.2.AppImage &
-
 source /home/marcus/.orion/orion.zshrc
 
 # >>> conda initialize >>>
