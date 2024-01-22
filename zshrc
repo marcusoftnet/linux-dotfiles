@@ -44,4 +44,7 @@ eval "$(pyenv init -)"
 
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
+# Add IntelliJ binaries (scripts to start tools) in Path
+export PATH="/home/marcus/bin:$PATH"
+
 source /home/marcus/.orion/orion.zshrc
