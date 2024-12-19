@@ -54,3 +54,5 @@
 	name = Marcus Hammarberg
 [pager]
   branch = false
+[init]
+	defaultBranch = main

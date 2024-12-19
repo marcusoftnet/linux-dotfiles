@@ -48,3 +48,10 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 export PATH="/home/marcus/bin:$PATH"
 
 source /home/marcus/.orion/orion.zshrc
+
+# bun completions
+[ -s "/home/marcus/.bun/_bun" ] && source "/home/marcus/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -112,7 +112,7 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 
 alias gbs="git checkout -"
 
-alias gmr="grep -oE 'http[s]?://[^ ]+' | tail -n 1 | xargs xdg-open"
+alias gmr="grep -oE 'http[s]?://[^ ]+' | tail -n 1"
 
 # Upgrade Oh My Zshell
 alias upz='upgrade_oh_my_zsh'
