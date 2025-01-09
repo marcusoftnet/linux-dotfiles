@@ -44,3 +44,5 @@ function rmnm () {
 function web() { npx live-server . --quiet; }
 
 function count() { find $1 -type f | wc -l  }
+
+function killport() { lsof -i tcp:$1 | awk 'NR!=1 {print $2}' | xargs kill }

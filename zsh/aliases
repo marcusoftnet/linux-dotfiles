@@ -159,13 +159,12 @@ alias gac='git add -A && git commit -m'
 alias gaca='git add -A && git commit --amend --no-edit'
 alias gstatusall="find . -name .git -type d -prune -exec sh -c '(cd {}/.. && echo {} && git status -s && echo)' \;"
 alias grmb="git branch | grep -v "master" | xargs git branch -D"
+alias go-projects="cd ~/Projects"
 
 # Scling stuff
 alias goodmorning="~/scling/orion/bin/good-morning.sh"
 alias e="code ."
 alias go-scling="cd ~/scling"
-alias go-scorpius="cd ~/scling/constellation/scorpius"
-alias go-antares="cd ~/scling/constellation/scorpius/service/antares"
 alias idea="sh ~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh >& /tmp/intellij.out &"
 alias i="sh ~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh >& /tmp/intellij.out &"
 alias serenade="/home/marcus/bin/Serenade-2.0.3-unofficial.AppImage >& /tmp/serenade.out &"
