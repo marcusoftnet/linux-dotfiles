@@ -8,7 +8,7 @@ fi
 # ~/.zshrc
 
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-export PATH=$HOME/.dotnet/tools:$PATH # adding dotnet tools to path
+export PATH=$HOME/.dotnet/tools:$HOME/.dotnet:$PATH # adding dotnet tools to path
 export EDITOR="code"
 export BUNDLER_EDITOR="code"
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
